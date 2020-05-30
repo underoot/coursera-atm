@@ -60,15 +60,4 @@ public class BST<Key extends Comparable<Key>, Value>
   {
     return inorder(root, new Queue<Key>());
   }
-
-  public static void main(String[] args)
-  {
-    BST<String, String> bst = new BST<String, String>();
-    bst.put("One", "1");
-    bst.put("Two", "2");
-    bst.put("Another", "4");
-    bst.put("Two", "4");
-
-    StdOut.println(bst.get("Two"));
-  }
 }
